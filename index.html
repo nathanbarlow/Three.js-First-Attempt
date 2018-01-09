@@ -46,7 +46,7 @@
 
       //MOVEMENT CONTROLS
       var controls = new THREE.OrbitControls( camera );
-      controls.target.set( 0, 0, -500 );
+      controls.target.set( 0, -100, -500 );
       controls.update();
 
       //CUBE
@@ -56,16 +56,27 @@
       mesh.position.set(0, 0, -500);
       scene.add(mesh);
 
+      //FLOOR
+      var geometry2 = new THREE.PlaneGeometry(500, 500);
+      var material2 = new THREE.MeshLambertMaterial({color: 0xF3FFE2, side: THREE.DoubleSide});
+      var mesh2 = new THREE.Mesh(geometry2, material2);
+      mesh2.position.set(0, -200, -500);
+      mesh2.rotation.x = degToRad(90);
+      scene.add(mesh2);
 
       //RENDER LOOP
       requestAnimationFrame(render);
 
       function render() {
-        mesh.rotation.x += 0.001;
-        mesh.rotation.y += 0.001;
+        //mesh.rotation.x += 0.001;
+        //mesh.rotation.y += 0.001;
 
         renderer.render(scene, camera);
         requestAnimationFrame(render);
+      }
+
+      function degToRad (numb) {
+        return numb * Math.PI / 180
       }
 
     </script>
