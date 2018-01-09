@@ -102,15 +102,15 @@
 			light.target = mesh;
 
 			//SKYBOX
-			var geometrySky = new THREE.BoxGeometry(10000, 10000, 10000);
+			var geometrySky = new THREE.BoxGeometry(9000, 9000, 9000);
 			var skyMaterials =
 			[
-				new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load( "skybox/arrakisday_ft.png" ), side: THREE.DoubleSide}),//front
-				new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load( "skybox/arrakisday_bk.png" ), side: THREE.DoubleSide}),//back
-				new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load( "skybox/arrakisday_up.png" ), side: THREE.DoubleSide}),//up
-				new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load( "skybox/arrakisday_dn.png" ), side: THREE.DoubleSide}),//down
-				new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load( "skybox/arrakisday_rt.png" ), side: THREE.DoubleSide}),//right
-				new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load( "skybox/arrakisday_lf.png" ), side: THREE.DoubleSide})//left
+				new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load( "skybox/arrakisday_ft.jpg" ), side: THREE.DoubleSide}),//front
+				new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load( "skybox/arrakisday_bk.jpg" ), side: THREE.DoubleSide}),//back
+				new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load( "skybox/arrakisday_up.jpg" ), side: THREE.DoubleSide}),//up
+				new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load( "skybox/arrakisday_dn.jpg" ), side: THREE.DoubleSide}),//down
+				new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load( "skybox/arrakisday_rt.jpg" ), side: THREE.DoubleSide}),//right
+				new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader().load( "skybox/arrakisday_lf.jpg" ), side: THREE.DoubleSide})//left
 			]
 
 			var materialSky = new THREE.MeshFaceMaterial( skyMaterials );
