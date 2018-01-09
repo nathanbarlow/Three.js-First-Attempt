@@ -1,6 +1,7 @@
 # Three.js-First-Attempt
 ## How to Open
-Click the link in the repository description or click the link bellow
+Click the link in the repository description or click the link bellow.
+
 https://nathanbarlow.github.io/Three.js-First-Attempt/
 
 ## Controls
